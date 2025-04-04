@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fezstech</title>
+    <!-- External CSS and Font Dependencies -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="IMG-20240926-WA0060.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="w3-top">
+        <div class="w3-bar w3-green w3-card-4 w3-opacity-min">
+            <span class="branding w3-bar-item w3-mobile w3-cursive">ABAYOMI ABDULAFEEZ LEKAN</span>
+            <span class="w3-right">
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#">About</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#w3-col m7">Services</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#formsec">Contact</a>
+            </span>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animation -->
+    <section class="showcase">
+        <div class="w3-container w3-center">
+            <h1 class="w3-text-shadow">SOFTWARE DEVELOPER</h1>
+            <hr>
+            <p class="w3-animate-opacity">I design all type of website<br>Html, Css, Javascript, PHP, Sql, E.T.C</p>
+            <a href="Abdulafeez s NEW CV.pdf" target="_blank">
+                <button class="btn btn-primary">Download CV</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section w3-light-green w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <i class="fa fa-eye"></i>
+            <h2>Let's Begin</h2>
+        </div>
+    </section>
+
+    <!-- About Section with Accordion -->
+    <section class="section">
+        <div class="w3-container">
+            <div class="w3-row-padding">
+                <div class="w3-col m5">
+                    <img src="artiz.ai_front_web_design.jpg" alt="Front Web Design">
+                </div>
+                <div class="w3-col m7" id="w3-col m7">
+                    <!-- What We Do Section -->
+                    <button onclick="fezFunction('what')" class="w3-button w3-block w3-left-align w3-black">
+                        What We Do
+                    </button>
+                    <div id="what" class="w3-container w3-show">
+                        <h3>We do it All</h3>
+                        <p>We design, build, and maintain websites and web applications, ensuring they are functional, responsive, and user-friendly.</p>
+                    </div>
+
+                    <!-- Personal Introduction -->
+                    <button onclick="fezFunction('who')" class="w3-button w3-block w3-left-align w3-black">
+                        WHO I AM
+                    </button>
+                    <div id="who" class="w3-container w3-show">
+                        <p style="background-color: gray;">My name is Abayomi Abdulafeez lekan, I am a frontend developer with proficient knowledge of HTML, CSS and its frameworks, JavaScript, PHP for form handling, connecting to backend and also SQL for database management</p>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <h5 class="w3-button w3-block w3-left-align w3-black">
+                        What We Do
+                    </h5>
+                    <div id="where" class="w3-container w3-show">
+                        <h3>Experience</h3>
+                        <p>CODE INSTRUCTOR at ONEIH limited, Offa Kwara State.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Header Section -->
+    <section id="services" class="section w3-red w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <h1 class="w3-text-shadow">OUR SERVICES</h1>
+            <p>Welcome to my portfolio</p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="section w3-light-grey">
+        <div class="w3-container w3-center">
+            <div class="w3-row">
+                <!-- Frontend Development Service -->
+                <div class="w3-col m3">
+                    <i class="fa fa-code w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>Frontend Development</h3>
+                    <p>We design, build, and maintain websites and web applications, ensuring they are functional, responsive, and user-friendly.</p>
+                </div>
+
+                <!-- Backend Development Service -->
+                <div class="w3-col m3">
+                    <i class="fa fa-bar-chart w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>Backend Development</h3>
+                    <p>With the knowledge of PHP and SQL we can manage form data and create an organized database.</p>
+                </div>
+
+                <!-- Website Design Service -->
+                <div class="w3-col m3">
+                    <i class="fa fa-tv w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>Website Design</h3>
+                    <p>We design and build websites and applications.</p>
+                </div>
+
+                <!-- PCB Design Service -->
+                <div class="w3-col m3">
+                    <i class="fa fa-bar-chart w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>PCB DESIGN</h3>
+                    <p>We design printed circuit boards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Header Section -->
+    <section id="contact" class="section w3-dark-grey w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <h1 class="w3-text-shadow">GET IN TOUCH</h1>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="w3-container">
+            <div class="w3-card-4">
+                <div class="w3-container w3-green">
+                    <h2>CONTACT US</h2>
+                    <!-- Contact Form with Formspree Integration -->
+                    <div class="formsec" id="formsec">
+                        <form action="https://formspree.io/f/xoveaewn" method="post" class="php-email-form">
+                            <div class="row gy-4">
+                                <div class="col-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="btn">Submit Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <p>Facebook: <a href="https://www.facebook.com/abayomi.lekan.376?mibextid=ZbWKwL">Click here</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/standard-abayomi-87aa3b282/">Click here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="w3-light-grey w3-padding-xlarge w3-center">
+        <p>Abayomi standard &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,118 +1,138 @@
-.branding{
-    font-size:17px;
+/* Header Branding */
+.branding {
+    font-size: 17px;
 }
 
-.showcase{
-    background:url('artiz.ai_a_web_developer_imag.jpg') no-repeat;
+/* Hero Section Styles */
+.showcase {
+    background: url('artiz.ai_a_web_developer_imag.jpg') no-repeat;
     background-position: center;
     height: 600px;
-    padding:140px 100px;
+    padding: 140px 100px;
     color: #fff;
     background-size: cover;
-    align-content: center;   
-        animation-name: img-fade-in;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
+    align-content: center;
+    animation-name: img-fade-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
-@keyframes img-fade-in{
-  from{
-      opacity: 0%;
-      width: 0%;
-  }
-  to{
-      opacity: 100%;
-      width: 100%;
-  }
+/* Hero Section Animation */
+@keyframes img-fade-in {
+    from {
+        opacity: 0%;
+        width: 0%;
+    }
+    to {
+        opacity: 100%;
+        width: 100%;
+    }
 }
-.showcase h1{
+
+/* Hero Section Typography */
+.showcase h1 {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.showcase hr{
+.showcase hr {
     width: 100px;
-    margin:auto;
-    border-width:3px;
-    border-color:#f44336;
+    margin: auto;
+    border-width: 3px;
+    border-color: #f44336;
+}
 
+.showcase p {
+    font-size: 16px;
+    padding-bottom: 20px;
 }
-.showcase p{
-    font-size:16px;
-    padding-bottom:20px;
-}
-.w3-text-shadow{
-    animation-name:text-shadow;
+
+/* Text Shadow Animation */
+.w3-text-shadow {
+    animation-name: text-shadow;
     animation-duration: 7s;
     animation-timing-function: ease-out;
-    /* animation-iteration-count: ; */
-    /* animation-fill-mode: both; */
 }
-@keyframes text-shadow{
-    0%{
-        opacity: 0; color: #50ff50; margin-left: 40%;
+
+@keyframes text-shadow {
+    0% {
+        opacity: 0;
+        color: #50ff50;
+        margin-left: 40%;
     }
-    50%{
-        font-size: 100px; color:  #f44336 ; margin-left:;
+    50% {
+        font-size: 100px;
+        color: #f44336;
     }
-    100%{
-        text-shadow: 0 0 10px #f44336; font-size: 70px; margin: 0 auto ;
+    100% {
+        text-shadow: 0 0 10px #f44336;
+        font-size: 70px;
+        margin: 0 auto;
     }
 }
 
-.section{
-    padding:40px 0;
+/* Section Common Styles */
+.section {
+    padding: 40px 0;
+}
 
+.section h2 {
+    padding: 0;
+    margin: 0;
 }
-.section h2{
-    padding:0;
-    margin:0; 
+
+.section .fa {
+    font-size: 50px;
 }
-.section .fa{
-    font-size:50px;
+
+.section img {
+    width: 100%;
 }
-.section img{
-    width:100%;
-}
-.formsec{
+
+/* Contact Form Styles */
+.formsec {
     width: 600px;
-    
 }
-.formsec input , textarea{
+
+.formsec input, textarea {
     width: 500px;
     padding: 5px;
     margin: 10px 0;
-    border:none
-   
+    border: none;
 }
-.btn{
+
+/* Button Styles */
+.btn {
     background: #f44336;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
-    border:none;
+    border: none;
     cursor: pointer;
     font-size: 16px;
 }
 
-@media only screen and (max-width:600px){
-    body{
-        margin-top:190px;
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        margin-top: 190px;
     }
-    .showcase{
-        height:400px;
-        padding:60px 0;
+
+    .showcase {
+        height: 400px;
+        padding: 60px 0;
     }
-    .formsec{
+
+    .formsec {
         width: 600px;
-        
     }
-    .formsec input , textarea{
+
+    .formsec input, textarea {
         width: 300px;
         padding: 5px;
         margin: 10px 0;
-        border:none;
+        border: none;
     }
 }
